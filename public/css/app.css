@@ -11100,3 +11100,30 @@ a.text-dark:focus {
   }
 }
 
+.app-form > div {
+  margin-top: 1em;
+}
+
+.padding {
+  padding: 1em;
+}
+
+.actions {
+  margin-top: 1em;
+}
+
+.text-center .pagination {
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.card-actions {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-left: 1em;
+}
+

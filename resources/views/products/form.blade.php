@@ -1,0 +1,24 @@
+{!! Form::open(['route' => [$product->url(), $product->id], 
+    'method'=> $product->method(), 
+    'class' => 'app-form']) 
+!!}
+    
+    <div>
+        {!!  Form::label ('title', 'Título del producto') !!}
+        {!! Form::text('title',$product->title, ['class'=> "form-control"]) !!}   
+    </div>
+    
+    <div>
+        {!!  Form::label ('price', 'Precio del producto') !!}
+        {!! Form::text('price',$product->price, ['class'=> "form-control"]) !!}   
+    </div>
+
+    <div>
+        {!!  Form::label ('descripcion', 'Descripción del producto') !!}
+        {!! Form::textarea('description',$product->description, ['class'=> "form-control"]) !!}   
+    </div>
+    <div >
+        <input type="submit" value='Guardar' class="btn btn-primary">
+    </div>
+
+{!! form::close() !!}
