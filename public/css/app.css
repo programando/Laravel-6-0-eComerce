@@ -11127,3 +11127,17 @@ a.text-dark:focus {
   margin-left: 1em;
 }
 
+.card-product {
+  max-width: 400px;
+}
+
+.card-product.total {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: solid 1px #eee;
+}
+
+.payment img {
+  margin-bottom: 3rem;
+}
+

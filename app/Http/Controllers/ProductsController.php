@@ -22,11 +22,15 @@ class ProductsController extends Controller
      */
     public function index( Request $Data )
     {
+
+
         $products = Product::paginate(10);
+
         if ( $Data->wantsJson() ) {
+
             return  new ProductsCollection ($products);
         }
-        //return view('products.index', ['products' => $products, 'shopping_cart' => $shopping_cart]);
+
         return view('products.index', ['products' => $products]);
 
     }

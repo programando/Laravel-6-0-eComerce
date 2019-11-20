@@ -17,11 +17,11 @@ class ProductsCollection extends ResourceCollection
        return [
            'data' =>  $this->collection->transform( function ($element) {
              return [
-                'title' => $element->title,
-                'id' => $element->id  ,
-                'humanPrice' => "$" . ($element->price / 100),
+                'title'       => $element->title,
+                'id'          => $element->id,
+                'humanPrice'  => "$" . ($element->price / 100),
                 'numberPrice' => $element->price,
-                'image' => $element->image_url,
+                'image'       => $element->image_url,
                 'description' => $element->description
              ]  ;
            }),
